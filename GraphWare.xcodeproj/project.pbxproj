@@ -6,6 +6,16 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9B3C24ED2DB4AEEE008B6B6B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 9B3C24EC2DB4AEEE008B6B6B /* FirebaseAuth */; };
+		9B3C24EF2DB4AEEE008B6B6B /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 9B3C24EE2DB4AEEE008B6B6B /* FirebaseCore */; };
+		9B3C24F12DB4AEEE008B6B6B /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 9B3C24F02DB4AEEE008B6B6B /* FirebaseDatabase */; };
+		9B3C24F32DB4AEEE008B6B6B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 9B3C24F22DB4AEEE008B6B6B /* FirebaseFirestore */; };
+		9B3C24F52DB4AEEE008B6B6B /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 9B3C24F42DB4AEEE008B6B6B /* FirebaseFunctions */; };
+		9B5F93542DB73D59009E621F /* CoreXLSX in Frameworks */ = {isa = PBXBuildFile; productRef = 9B5F93532DB73D59009E621F /* CoreXLSX */; };
+		9BEEC41D2DB514FC00B9D2DC /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 9BEEC41C2DB514FC00B9D2DC /* SQLite */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		9B3C24CF2DB49C4A008B6B6B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +39,22 @@
 		9B3C24D82DB49C4A008B6B6B /* GraphWareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraphWareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		9BEEC4162DB5000D00B9D2DC /* Exceptions for "GraphWare" folder in "GraphWare" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 9B3C24C02DB49C49008B6B6B /* GraphWare */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		9B3C24C32DB49C49008B6B6B /* GraphWare */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				9BEEC4162DB5000D00B9D2DC /* Exceptions for "GraphWare" folder in "GraphWare" target */,
+			);
 			path = GraphWare;
 			sourceTree = "<group>";
 		};
@@ -52,6 +75,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B5F93542DB73D59009E621F /* CoreXLSX in Frameworks */,
+				9BEEC41D2DB514FC00B9D2DC /* SQLite in Frameworks */,
+				9B3C24F12DB4AEEE008B6B6B /* FirebaseDatabase in Frameworks */,
+				9B3C24F32DB4AEEE008B6B6B /* FirebaseFirestore in Frameworks */,
+				9B3C24F52DB4AEEE008B6B6B /* FirebaseFunctions in Frameworks */,
+				9B3C24EF2DB4AEEE008B6B6B /* FirebaseCore in Frameworks */,
+				9B3C24ED2DB4AEEE008B6B6B /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +142,13 @@
 			);
 			name = GraphWare;
 			packageProductDependencies = (
+				9B3C24EC2DB4AEEE008B6B6B /* FirebaseAuth */,
+				9B3C24EE2DB4AEEE008B6B6B /* FirebaseCore */,
+				9B3C24F02DB4AEEE008B6B6B /* FirebaseDatabase */,
+				9B3C24F22DB4AEEE008B6B6B /* FirebaseFirestore */,
+				9B3C24F42DB4AEEE008B6B6B /* FirebaseFunctions */,
+				9BEEC41C2DB514FC00B9D2DC /* SQLite */,
+				9B5F93532DB73D59009E621F /* CoreXLSX */,
 			);
 			productName = GraphWare;
 			productReference = 9B3C24C12DB49C49008B6B6B /* GraphWare.app */;
@@ -195,6 +232,11 @@
 			);
 			mainGroup = 9B3C24B82DB49C49008B6B6B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				9B3C24EB2DB4AEEE008B6B6B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				9BEEC41B2DB514EA00B9D2DC /* XCRemoteSwiftPackageReference "SQLite" */,
+				9B5F93522DB73D59009E621F /* XCRemoteSwiftPackageReference "CoreXLSX" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9B3C24C22DB49C49008B6B6B /* Products */;
 			projectDirPath = "";
@@ -395,13 +437,17 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 89QM2HG549;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GraphWare/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GraphWare;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This app uses Bluetooth to simulate sensor data.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -422,13 +468,17 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 89QM2HG549;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GraphWare/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GraphWare;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This app uses Bluetooth to simulate sensor data.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -550,6 +600,71 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9B3C24EB2DB4AEEE008B6B6B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.11.0;
+			};
+		};
+		9B5F93522DB73D59009E621F /* XCRemoteSwiftPackageReference "CoreXLSX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CoreOffice/CoreXLSX.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.14.2;
+			};
+		};
+		9BEEC41B2DB514EA00B9D2DC /* XCRemoteSwiftPackageReference "SQLite" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.15.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9B3C24EC2DB4AEEE008B6B6B /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B3C24EB2DB4AEEE008B6B6B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		9B3C24EE2DB4AEEE008B6B6B /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B3C24EB2DB4AEEE008B6B6B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		9B3C24F02DB4AEEE008B6B6B /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B3C24EB2DB4AEEE008B6B6B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		9B3C24F22DB4AEEE008B6B6B /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B3C24EB2DB4AEEE008B6B6B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		9B3C24F42DB4AEEE008B6B6B /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B3C24EB2DB4AEEE008B6B6B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		9B5F93532DB73D59009E621F /* CoreXLSX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B5F93522DB73D59009E621F /* XCRemoteSwiftPackageReference "CoreXLSX" */;
+			productName = CoreXLSX;
+		};
+		9BEEC41C2DB514FC00B9D2DC /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9BEEC41B2DB514EA00B9D2DC /* XCRemoteSwiftPackageReference "SQLite" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9B3C24B92DB49C49008B6B6B /* Project object */;
 }

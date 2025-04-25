@@ -1,17 +1,19 @@
-//
-//  GraphWareApp.swift
-//  GraphWare
-//
-//  Created by Shashi on 4/19/25.
-//
 
+import FirebaseCore
 import SwiftUI
 
 @main
 struct GraphWareApp: App {
+    @StateObject var bluetoothSimulator = BluetoothSimulator()
+    
+    init(){
+        FirebaseApp.configure();
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView().environmentObject(bluetoothSimulator)
         }
     }
 }
+
