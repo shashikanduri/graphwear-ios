@@ -29,6 +29,7 @@ class BluetoothSimulator: NSObject, ObservableObject, CBCentralManagerDelegate {
     // function and implement peripherals connecting to this central
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
         print("📡 Central Manager state: \(central.state.rawValue)")
+        print(central.state)
         if central.state == .poweredOn {
             print("✅ Central Bluetooth is powered on — simulating sensor data reception")
             centralManager?.scanForPeripherals(withServices: nil, options: nil)
@@ -40,6 +41,7 @@ class BluetoothSimulator: NSObject, ObservableObject, CBCentralManagerDelegate {
 
     // simulating bluetooth device incoming data
     private func startSimulation() {
+        print("hre")
         print("✅ Starting Bluetooth simulation")
         beginTimer()
     }

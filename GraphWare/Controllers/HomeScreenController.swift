@@ -3,28 +3,10 @@ import FirebaseFirestore
 import CoreXLSX
 
 class HomeScreenController: ObservableObject {
-    @Published var selectedOption: String = "Sensor One"
     
     private let db = Firestore.firestore()
     private let userIdKey = "bluetooth_user_id"
     private let userNameKey = "user_name"
-    
-    let options = ["Sensor One", "Sensor Two"]
-    private let storageKey = "selected_dropdown_value"
-
-    init() {
-        if let saved = UserDefaults.standard.string(forKey: storageKey) {
-            selectedOption = saved
-        } else {
-            UserDefaults.standard.set("Sensor One", forKey: storageKey)
-            selectedOption = "Sensor One"
-        }
-        
-    }
-
-    func storeSelectionInLocalStorage() {
-        UserDefaults.standard.set(selectedOption, forKey: storageKey)
-    }
     
 
     func registerUser(name: String, completion: @escaping (Bool) -> Void) {
